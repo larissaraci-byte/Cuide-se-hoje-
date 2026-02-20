@@ -3,21 +3,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cuide-se Hoje</title>
+  <title>Autocuidado e Autoajuda</title>
   <style>
     body {
       font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
       text-align: center;
+    }
+    header {
+      background-color: #27ae60;
+      color: white;
       padding: 20px;
-      background-color: #f8f9fa;
     }
-    h1, h2 {
-      color: #2c3e50;
+    header h1 {
+      margin: 0;
+      font-size: 24px;
     }
-    img {
-      margin: 20px 0;
-      max-width: 100%;
-      border-radius: 10px;
+    img.banner {
+      width: 100%;
+      max-width: 600px;
+      margin: 20px auto;
+      display: block;
+      border-radius: 12px;
+    }
+    section {
+      padding: 20px;
+    }
+    h2 {
+      color: #27ae60;
+    }
+    p {
+      font-size: 14px;
+      margin: 10px 0 20px 0;
     }
     a.button {
       display: inline-block;
@@ -28,53 +47,47 @@
       text-decoration: none;
       border-radius: 8px;
       font-weight: bold;
+      transition: background-color 0.3s;
     }
     a.button:hover {
       background-color: #2ecc71;
-    }
-    /* Botão pulse efeito */
-    .pulse {
-      animation: pulse-animation 1.5s infinite;
-    }
-    @keyframes pulse-animation {
-      0% { transform: scale(1); box-shadow: 0 0 0 rgba(39, 174, 96, 0.7); }
-      50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(39, 174, 96, 0.9); }
-      100% { transform: scale(1); box-shadow: 0 0 0 rgba(39, 174, 96, 0.7); }
-    }
-    p.secure {
-      margin-top: 20px;
-      color: #16a085;
-      font-weight: bold;
-    }
-    p.impact {
-      font-size: 1.1em;
-      color: #e67e22;
-      margin: 10px 0 20px 0;
     }
   </style>
 </head>
 <body>
 
-  <h1>💛 Cuide-se Hoje 💛</h1>
-  <p class="impact">Em apenas alguns minutos por dia, transforme sua rotina e cuide melhor de você! ✨🧘‍♀️</p>
+  <header>
+    <h1>Autocuidado e Autoajuda</h1>
+  </header>
 
-  <!-- Banner -->
-  <img src="imagens/banner-pdf.png" alt="Banner do PDF de Autoajuda">
+  <img class="banner" src="imagens/banner-pdf.png" alt="Banner Autocuidado">
 
-  <h2>📄 PDF Grátis (Amostra)</h2>
-  <p>Um pequeno guia com dicas rápidas de autocuidado e bem-estar. Ideal para começar hoje mesmo!</p>
-  <a class="button" href="pdf-gratis.pdf" download>Baixar PDF Grátis</a>
+  <section>
+    <h2>📄 Amostra Grátis</h2>
+    <p>Mini exercício de gratidão + quiz rápido para descobrir seu caminho de autocuidado.</p>
+    <a class="button" href="pdf-amostra-gratis.pdf" target="_blank">Baixar Grátis</a>
+  </section>
 
-  <h2>💳 PDF Completo (Pago)</h2>
-  <p>Conteúdo completo com técnicas avançadas, exercícios e estratégias práticas. À vista ou parcelado! 💛</p>
-  <a class="button pulse" href="https://mpago.la/18RdMyg" target="_blank">✨ Pagar e Acessar PDF Completo ✨</a>
+  <section>
+    <h2>📄 Intermediário (Mini Premium)</h2>
+    <p>5 técnicas + checklist rápido de hábitos. Um passo além da amostra grátis.</p>
+    <a class="button" href="https://mpago.la/1etMcP6" target="_blank">Pix 7,99</a>
+    <a class="button" href="https://mpago.la/1EkJAvo" target="_blank">Crédito 7,99</a>
+  </section>
 
-  <h2>Pix</h2>
-  <img src="imagens/qr-pix.png" alt="QR code Pix" style="width:200px;">
-  <p>Escaneie o QR code ou clique no botão abaixo:</p>
-  <a class="button" href="https://mpago.la/1etMcP6" target="_blank">Pagar via Pix</a>
+  <section>
+    <h2>📄 Completo</h2>
+    <p>7 técnicas de autocuidado + exercícios práticos. Conteúdo completo para transformar sua rotina.</p>
+    <a class="button" href="SEU_LINK_COMPLETO_PIX" target="_blank">Pix 25,99</a>
+    <a class="button" href="SEU_LINK_COMPLETO_CARTAO" target="_blank">Crédito 25,99</a>
+  </section>
 
-  <p class="secure">🔒 Pagamento seguro via Pix ou Mercado Pago. Site protegido por HTTPS</p>
+  <section>
+    <h2>📄 Premium</h2>
+    <p>Guia robusto, checklist completo, mini-desafios e seções de anotações. O máximo em autocuidado.</p>
+    <a class="button" href="https://mpago.la/2x82vm1" target="_blank">Pix 49,99</a>
+    <a class="button" href="https://mpago.la/2eF7NXW" target="_blank">Crédito 49,99</a>
+  </section>
 
 </body>
 </html>
