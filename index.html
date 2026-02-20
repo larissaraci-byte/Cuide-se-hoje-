@@ -1,45 +1,57 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Cuide-se Hoje - Autoajuda e Bem-Estar</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cuide-se Hoje</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    img {
+      margin: 20px 0;
+    }
+    a.button {
+      display: inline-block;
+      margin: 10px;
+      padding: 12px 20px;
+      background-color: #27ae60;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    a.button:hover {
+      background-color: #2ecc71;
+    }
+    p.secure {
+      margin-top: 20px;
+      color: #16a085;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h1>Cuide-se Hoje</h1>
-  <p>Guia prático para cuidar da mente, corpo e bem-estar, mesmo com TDAH</p>
-</header>
+  <h1>💛 Cuide-se Hoje 💛</h1>
+  <p>Escolha sua forma de pagamento e baixe seu material de autoajuda!</p>
 
-<main>
-  <!-- Seção de Produto -->
-  <section id="produtos">
-    <h2>Guia de Autocuidado em PDF</h2>
-    <p>Aprenda técnicas simples para foco, relaxamento e hábitos saudáveis.</p>
-    <button onclick="comprarPix()">Comprar / Baixar via Pix</button>
-    <p>Ou baixe gratuitamente e receba conteúdo exclusivo por email:</p>
-    <form id="formEmail">
-      <input type="email" placeholder="Seu email" required>
-      <button type="submit">Receber PDF</button>
-    </form>
-    <p id="msg"></p>
-  </section>
+  <h2>Pix</h2>
+  <img src="qr-pix.png" alt="QR code Pix" style="width:200px;">
+  <p>Escaneie o QR code ou clique no botão abaixo:</p>
+  <a class="button" href="https://mpago.la/1etMcP6" target="_blank">Pagar via Pix</a>
 
-  <!-- Sobre -->
-  <section id="sobre">
-    <h2>Sobre Nós</h2>
-    <p>Nosso objetivo é ajudar pessoas a viverem com mais equilíbrio, foco e bem-estar, através de materiais digitais práticos e acessíveis.</p>
-  </section>
-</main>
+  <h2>Cartão de Crédito</h2>
+  <p>À vista ou parcelado</p>
+  <a class="button" href="https://mpago.la/18RdMyg" target="_blank">Pagar com Cartão</a>
 
-<footer>
-  <p>Contato: contato@cuidesehoje.com</p>
-  <p>© 2026 Cuide-se Hoje</p>
-</footer>
+  <p class="secure">🔒 Pagamento seguro via Pix ou Mercado Pago. Site protegido por HTTPS</p>
 
-<script src="script.js"></script>
 </body>
 </html>
