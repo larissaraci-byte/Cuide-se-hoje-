@@ -1,0 +1,21 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #fdf6f0; color: #333;
+}
+header {
+  text-align: center; padding: 2rem;
+  background: #f9e7d9;
+}
+h1 { font-size: 2rem; color: #c27b5a; }
+h2 { color: #a55b3d; }
+main { padding: 2rem; }
+button {
+  background: #c27b5a; color: white; border: none;
+  padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;
+}
+button:hover { background: #a55b3d; }
+form { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+input[type="email"] { flex: 1; padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; }
+footer { text-align: center; padding: 1rem; background: #f9e7d9; margin-top: 2rem; }
