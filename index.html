@@ -16,6 +16,8 @@
     }
     img {
       margin: 20px 0;
+      max-width: 100%;
+      border-radius: 10px;
     }
     a.button {
       display: inline-block;
@@ -30,25 +32,41 @@
     a.button:hover {
       background-color: #2ecc71;
     }
+    /* Botão pulse efeito */
+    .pulse {
+      animation: pulse-animation 1.5s infinite;
+    }
+    @keyframes pulse-animation {
+      0% { transform: scale(1); box-shadow: 0 0 0 rgba(39, 174, 96, 0.7); }
+      50% { transform: scale(1.05); box-shadow: 0 0 15px rgba(39, 174, 96, 0.9); }
+      100% { transform: scale(1); box-shadow: 0 0 0 rgba(39, 174, 96, 0.7); }
+    }
     p.secure {
       margin-top: 20px;
       color: #16a085;
       font-weight: bold;
+    }
+    p.impact {
+      font-size: 1.1em;
+      color: #e67e22;
+      margin: 10px 0 20px 0;
     }
   </style>
 </head>
 <body>
 
   <h1>💛 Cuide-se Hoje 💛</h1>
-  <p>Escolha sua forma de pagamento ou baixe uma amostra grátis do nosso PDF de autoajuda!</p>
+  <p class="impact">Em apenas alguns minutos por dia, transforme sua rotina e cuide melhor de você! ✨🧘‍♀️</p>
+
+  <img src="banner-pdf.png" alt="Banner do PDF de Autoajuda">
 
   <h2>📄 PDF Grátis (Amostra)</h2>
   <p>Um pequeno guia com dicas rápidas de autocuidado e bem-estar. Ideal para começar hoje mesmo!</p>
   <a class="button" href="pdf-gratis.pdf" download>Baixar PDF Grátis</a>
 
   <h2>💳 PDF Completo (Pago)</h2>
-  <p>Conteúdo completo com técnicas avançadas, exercícios e estratégias práticas. À vista ou parcelado!</p>
-  <a class="button" href="https://mpago.la/18RdMyg" target="_blank">Pagar e Acessar PDF Completo</a>
+  <p>Conteúdo completo com técnicas avançadas, exercícios e estratégias práticas. À vista ou parcelado! 💛</p>
+  <a class="button pulse" href="https://mpago.la/18RdMyg" target="_blank">✨ Pagar e Acessar PDF Completo ✨</a>
 
   <h2>Pix</h2>
   <img src="qr-pix.png" alt="QR code Pix" style="width:200px;">
