@@ -1,0 +1,80 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cuide-se Hoje - Autoajuda e Bem-Estar</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Cuide-se Hoje</h1>
+  <p>Guia prático para cuidar da mente, corpo e bem-estar, mesmo com TDAH</p>
+</header>
+
+<main>
+  <!-- Seção de Produto -->
+  <section id="produtos">
+    <h2>Guia de Autocuidado em PDF</h2>
+    <p>Aprenda técnicas simples para foco, relaxamento e hábitos saudáveis.</p>
+    <button onclick="comprarPix()">Comprar / Baixar via Pix</button>
+    <p>Ou baixe gratuitamente e receba conteúdo exclusivo por email:</p>
+    <form id="formEmail">
+      <input type="email" placeholder="Seu email" required>
+      <button type="submit">Receber PDF</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <!-- Sobre -->
+  <section id="sobre">
+    <h2>Sobre Nós</h2>
+    <p>Nosso objetivo é ajudar pessoas a viverem com mais equilíbrio, foco e bem-estar, através de materiais digitais práticos e acessíveis.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Contato: contato@cuidesehoje.com</p>
+  <p>© 2026 Cuide-se Hoje</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>/* style.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0; padding: 0;
+  background: #fdf6f0; color: #333;
+}
+header {
+  text-align: center; padding: 2rem;
+  background: #f9e7d9;
+}
+h1 { font-size: 2rem; color: #c27b5a; }
+h2 { color: #a55b3d; }
+main { padding: 2rem; }
+button {
+  background: #c27b5a; color: white; border: none;
+  padding: 0.5rem 1rem; border-radius: 5px; cursor: pointer;
+}
+button:hover { background: #a55b3d; }
+form { display: flex; gap: 0.5rem; margin-top: 0.5rem; }
+input[type="email"] { flex: 1; padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc; }
+footer { text-align: center; padding: 1rem; background: #f9e7d9; margin-top: 2rem// script.js
+const form = document.getElementById('formEmail');
+const msg = document.getElementById('msg');
+
+// Captura de emails
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = form.querySelector('input').value;
+  msg.textContent = `Obrigado por se inscrever, ${email}! O PDF será enviado por email em breve.`;
+  form.reset();
+});
+
+// Simulação de botão Pix
+function comprarPix() {
+  alert("Aqui você pode colocar seu QR code Pix ou link de pagamento direto!");
+}
